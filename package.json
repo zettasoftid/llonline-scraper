@@ -1,0 +1,15 @@
+{
+  "name": "llonline_scraper",
+  "version": "1.0.0",
+  "description": "Scraper Llonline",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.22",
+    "puppeteer": "^19.9.1"
+  }
+}
