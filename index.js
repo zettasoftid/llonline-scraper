@@ -1,42 +1,63 @@
 const puppeteer = require('puppeteer');
+const fs = require('fs');
 
 (async () => {
-  const browser = await puppeteer.launch();
+  // Launch Puppeteer 
+  const browser = await puppeteer.launch({
+    headless: false,
+    args: [
+      '--start-maximized',
+      `--disable-blink-features=AutomationControlled`,
+      `--disable-web-security`,
+      `--allow-running-insecure-content`
+    ],
+    defaultViewport: null
+  });
   const page = await browser.newPage();
+  await page.setUserAgent(
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36'
+  );
 
   // Go to the license lookup page
   await page.goto('https://verify.llronline.com/LicLookup/Optometry/Optometry.aspx?div=42');
 
   // Enter a search term for the last name
-  await page.type('#txtLName', 'Smith');
+  await page.type('#ctl00_ContentPlaceHolder1_UserInputGen_txt_lastName', 'Smith');
 
   // Click the search button
-  await page.click('#btnSearch');
+  await page.click('#aspnetForm > div:nth-child(5) > table > tbody > tr > td:nth-child(1) > table > tbody > tr:nth-child(5) > td.tdrightside > button');
 
   // Wait for the results to load
-  await page.waitForSelector('#tblResults tbody tr');
-
+  const selector = '#ctl00_ContentPlaceHolder2_gv_results > tbody';
+  await page.waitForSelector(selector);
+    
   // Scrape the data from the results table
-  const results = await page.evaluate(() => {
-    const rows = document.querySelectorAll('#tblResults tbody tr');
-    const licenses = [];
-
-    for (const row of rows) {
-      const cells = row.querySelectorAll('td');
-
-      licenses.push({
-        licenseNumber: cells[0].textContent.trim(),
-        fullName: cells[1].textContent.trim(),
-        status: cells[2].textContent.trim(),
-        issueDate: cells[3].textContent.trim(),
-        expirationDate: cells[4].textContent.trim()
-      });
-    }
-
-    return licenses;
+  const data = await page.$$eval(selector + ' > tr', rows => {
+    return Array.from(rows, row => {
+      const cells = row.querySelectorAll("td");
+      if (cells.length < 7) {
+        // Return null if the row doesn't have enough td elements
+        return null;
+      }
+      return {
+        licNum: cells[0].innerText,
+        last: cells[1].innerText,
+        first: cells[2].innerText,
+        middle: cells[3].innerText,
+        city: cells[4].innerText,
+        state: cells[5].innerText,
+        type: cells[6].innerText,
+      };
+    }).filter(item => item !== null); // Remove null values from the array
+  });
+  
+  console.log(data); 
+  // Write the data to a file
+  fs.writeFile('data.json', JSON.stringify(data), (err) => {
+    if (err) throw err;
+    console.log('Data has been written to data.json');
   });
 
-  console.log(results);
 
   await browser.close();
 })();
