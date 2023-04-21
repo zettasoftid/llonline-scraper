@@ -68,6 +68,12 @@ const fs = require('fs');
 
     // Get the page object for the popup
     const popupPage = await popupTarget.page();
+    
+    // Grab data element in popup
+    const namePopupPage = await popupPage.$eval('#lbl_name', e => e.textContent);
+    const addressPopupPage = await popupPage.$eval('#lbl_add', e => e.textContent);
+    const licenseInfoPopupPage = await popupPage.$eval('#lbl_info', e => e.textContent);
+    console.log({namePopupPage, addressPopupPage, licenseInfoPopupPage});
 
     // Delay for 10 seconds before closing the popup
     setTimeout(async () => {
