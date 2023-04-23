@@ -1,1 +1,277 @@
-[{"licNum":"1256","last":"Smith","first":"Allen","middle":"R","city":"Beaufort","state":"MI","type":"Optometrist"},{"licNum":"2259","last":"SMITH","first":"AMANDA","middle":"LAUREN","city":"TAMPA","state":"FL","type":"Optometrist"},{"licNum":"2183","last":"SMITH","first":"APRIL","middle":"MARIE","city":"GREER","state":"SC","type":"Optometrist"},{"licNum":"2106","last":"SMITH","first":"ASHLEY","middle":"BECKING","city":"GREENVILLE","state":"SC","type":"Optometrist"},{"licNum":"1539","last":"Smith","first":"Benjamin","middle":"David","city":"Durango","state":"CO","type":"Optometrist"},{"licNum":"1699","last":"Smith","first":"Bobby","middle":"Darrell","city":"Escondido","state":"CA","type":"Optometrist"},{"licNum":"1698","last":"Smith","first":"Bradford","middle":"Dean","city":"FORT MILL","state":"SC","type":"Optometrist"},{"licNum":"1996","last":"SMITH","first":"CARA","middle":"HAWTHORNE","city":"CHARLESTON","state":"SC","type":"Optometrist"},{"licNum":"645","last":"Smith","first":"Charles","middle":"M","city":"Dalton","state":"GA","type":"Optometrist"},{"licNum":"604","last":"Smith","first":"Cleo","middle":"Herbert","city":"KANNAPOLIS","state":"NC","type":"Optometrist"},{"licNum":"1875","last":"SMITH","first":"DONALD","middle":"STEWART","city":"NORTH CHARLESTON","state":"SC","type":"Optometrist"},{"licNum":"1182","last":"Smith","first":"Elven","middle":"Conrad","city":"ROCKINGHAM","state":"NC","type":"Optometrist"},{"licNum":"733","last":"Smith","first":"Franklin","middle":"N","city":"MYRTLE BEACH","state":"SC","type":"Optometrist"},{"licNum":"583","last":"SMITH","first":"FURMAN","middle":"MASON","city":"MOUNT PLEASANT","state":"SC","type":"Optometrist"},{"licNum":"491","last":"Smith","first":"Gary","middle":"L","city":"ROME","state":"GA","type":"Optometrist"},{"licNum":"674","last":"Smith","first":"John","middle":"W L","city":"N AUGUSTA","state":"SC","type":"Optometrist"},{"licNum":"785","last":"SMITH","first":"JOHN","middle":"H","city":"MURRELLS INLET","state":"SC","type":"Optometrist"},{"licNum":"2361","last":"SMITH","first":"KELSEY","middle":"DEBORAH","city":"COLORADO SPRINGS","state":"CO","type":"Optometrist"},{"licNum":"1029","last":"SMITH","first":"PATRICK","middle":"WILLIAM","city":"CHARLESTON","state":"SC","type":"Optometrist"},{"licNum":"877","last":"Smith","first":"Robert","middle":"H.","city":"PAWLEYS ISLAND","state":"SC","type":"Optometrist"},{"licNum":"2375","last":"SMITH","first":"ROBERT","middle":" ","city":"TYRONE","state":"NM","type":"Optometrist"},{"licNum":"587","last":"Smith","first":"Rosalind","middle":"O","city":"GREER","state":"SC","type":"Optometrist"},{"licNum":"556","last":"Smith","first":"Theron","middle":"C","city":"GREER","state":"SC","type":"Optometrist"},{"licNum":"646","last":"Smith","first":"Thomas","middle":"W","city":"GREENVILLE","state":"SC","type":"Optometrist"},{"licNum":"1768","last":"SMITH","first":"WILLIAM","middle":"DOUGLAS","city":"JACKSONVILLE BEACH","state":"FL","type":"Optometrist"}]
+[
+    {
+        "namePopupPage": "Allen R Smith",
+        "addressPopupPage": "Beaufort, MI  49315-8167   (mailing address)",
+        "licenseNumber": "1256",
+        "licenseType": "Optometrist",
+        "certification": "TPA",
+        "originalIssueDate": "08/30/2002",
+        "status": "Lapsed",
+        "expiration": "10/01/2006",
+        "boardPublicActionHistory": ""
+    },
+    {
+        "namePopupPage": "AMANDA LAUREN SMITH",
+        "addressPopupPage": "TAMPA, FL  33607   (mailing address)",
+        "licenseNumber": "2259",
+        "licenseType": "Optometrist",
+        "certification": "04/13/2021",
+        "originalIssueDate": "Lapsed",
+        "status": "12/31/2022",
+        "expiration": "",
+        "boardPublicActionHistory": ""
+    },
+    {
+        "namePopupPage": "APRIL MARIE SMITH",
+        "addressPopupPage": "GREER, SC  29651   (mailing address)",
+        "licenseNumber": "2183",
+        "licenseType": "Optometrist",
+        "certification": "06/01/2020",
+        "originalIssueDate": "Lapsed",
+        "status": "12/31/2022",
+        "expiration": "",
+        "boardPublicActionHistory": ""
+    },
+    {
+        "namePopupPage": "ASHLEY BECKING SMITH",
+        "addressPopupPage": "GREENVILLE, SC  29615-4965   (mailing address)",
+        "licenseNumber": "2106",
+        "licenseType": "Optometrist",
+        "certification": "01/10/2019",
+        "originalIssueDate": "Active",
+        "status": "12/31/2024",
+        "expiration": "",
+        "boardPublicActionHistory": ""
+    },
+    {
+        "namePopupPage": "Benjamin David Smith",
+        "addressPopupPage": "Durango, CO  81301   (mailing address)",
+        "licenseNumber": "1539",
+        "licenseType": "Optometrist",
+        "certification": "TPA",
+        "originalIssueDate": "10/01/2008",
+        "status": "Lapsed",
+        "expiration": "10/01/2010",
+        "boardPublicActionHistory": ""
+    },
+    {
+        "namePopupPage": "Bobby Darrell Smith",
+        "addressPopupPage": "Escondido, CA  92026   (mailing address)",
+        "licenseNumber": "1699",
+        "licenseType": "Optometrist",
+        "certification": "TPA",
+        "originalIssueDate": "05/08/2012",
+        "status": "Lapsed",
+        "expiration": "12/31/2014",
+        "boardPublicActionHistory": ""
+    },
+    {
+        "namePopupPage": "Bradford Dean Smith",
+        "addressPopupPage": "FORT MILL, SC  29715-8464   (mailing address)",
+        "licenseNumber": "1698",
+        "licenseType": "Optometrist",
+        "certification": "TPA",
+        "originalIssueDate": "04/19/2012",
+        "status": "Lapsed",
+        "expiration": "12/31/2020",
+        "boardPublicActionHistory": ""
+    },
+    {
+        "namePopupPage": "CARA HAWTHORNE SMITH",
+        "addressPopupPage": "CHARLESTON, SC  29414-6810   (mailing address)",
+        "licenseNumber": "1996",
+        "licenseType": "Optometrist",
+        "certification": "TPA",
+        "originalIssueDate": "06/07/2017",
+        "status": "Active",
+        "expiration": "12/31/2024",
+        "boardPublicActionHistory": ""
+    },
+    {
+        "namePopupPage": "Charles M Smith",
+        "addressPopupPage": "Dalton, GA  30722-0969   (mailing address)",
+        "licenseNumber": "645",
+        "licenseType": "Optometrist",
+        "certification": "Basic",
+        "originalIssueDate": "07/17/1979",
+        "status": "Lapsed",
+        "expiration": "10/01/1999",
+        "boardPublicActionHistory": ""
+    },
+    {
+        "namePopupPage": "Cleo Herbert Smith",
+        "addressPopupPage": "KANNAPOLIS, NC  28081   (mailing address)",
+        "licenseNumber": "604",
+        "licenseType": "Optometrist",
+        "certification": "TPA",
+        "originalIssueDate": "07/30/1977",
+        "status": "Lapsed",
+        "expiration": "12/31/2022",
+        "boardPublicActionHistory": ""
+    },
+    {
+        "namePopupPage": "DONALD STEWART SMITH",
+        "addressPopupPage": "NORTH CHARLESTON, SC  29405-4121   (mailing address)",
+        "licenseNumber": "1875",
+        "licenseType": "Optometrist",
+        "certification": "TPA",
+        "originalIssueDate": "05/28/2015",
+        "status": "Lapsed",
+        "expiration": "12/31/2020",
+        "boardPublicActionHistory": ""
+    },
+    {
+        "namePopupPage": "Elven Conrad Smith",
+        "addressPopupPage": "ROCKINGHAM, NC  28379-4456   (mailing address)",
+        "licenseNumber": "1182",
+        "licenseType": "Optometrist",
+        "certification": "TPA",
+        "originalIssueDate": "09/05/2000",
+        "status": "Lapsed",
+        "expiration": "12/31/2018",
+        "boardPublicActionHistory": ""
+    },
+    {
+        "namePopupPage": "Franklin N Smith",
+        "addressPopupPage": "MYRTLE BEACH, SC  29577   (mailing address)",
+        "licenseNumber": "733",
+        "licenseType": "Optometrist",
+        "certification": "TPA",
+        "originalIssueDate": "07/28/1982",
+        "status": "Active",
+        "expiration": "12/31/2024",
+        "boardPublicActionHistory": ""
+    },
+    {
+        "namePopupPage": "FURMAN MASON SMITH",
+        "addressPopupPage": "MOUNT PLEASANT, SC  29464-3487   (mailing address)",
+        "licenseNumber": "583",
+        "licenseType": "Optometrist",
+        "certification": "TPA",
+        "originalIssueDate": "07/08/1976",
+        "status": "Active",
+        "expiration": "12/31/2024",
+        "boardPublicActionHistory": ""
+    },
+    {
+        "namePopupPage": "Gary L Smith",
+        "addressPopupPage": "ROME, GA  30165-2664   (mailing address)",
+        "licenseNumber": "491",
+        "licenseType": "Optometrist",
+        "certification": "Basic",
+        "originalIssueDate": "07/09/1969",
+        "status": "Lapsed",
+        "expiration": "10/01/2004",
+        "boardPublicActionHistory": ""
+    },
+    {
+        "namePopupPage": "John W L Smith",
+        "addressPopupPage": "N AUGUSTA, SC  29841-3702   (mailing address)",
+        "licenseNumber": "674",
+        "licenseType": "Optometrist",
+        "certification": "TPA",
+        "originalIssueDate": "06/15/1980",
+        "status": "Lapsed",
+        "expiration": "12/31/2020",
+        "boardPublicActionHistory": ""
+    },
+    {
+        "namePopupPage": "JOHN H SMITH",
+        "addressPopupPage": "MURRELLS INLET, SC  29576   (mailing address)",
+        "licenseNumber": "785",
+        "licenseType": "Optometrist",
+        "certification": "TPA",
+        "originalIssueDate": "07/14/1984",
+        "status": "Active",
+        "expiration": "12/31/2024",
+        "boardPublicActionHistory": ""
+    },
+    {
+        "namePopupPage": "KELSEY DEBORAH SMITH",
+        "addressPopupPage": "COLORADO SPRINGS, CO  80906   (mailing address)",
+        "licenseNumber": "2361",
+        "licenseType": "Optometrist",
+        "certification": "06/30/2022",
+        "originalIssueDate": "Active",
+        "status": "09/30/2024",
+        "expiration": "",
+        "boardPublicActionHistory": ""
+    },
+    {
+        "namePopupPage": "PATRICK WILLIAM SMITH ",
+        "addressPopupPage": "CHARLESTON, SC  29414-5896   (mailing address)",
+        "licenseNumber": "1029",
+        "licenseType": "Optometrist",
+        "certification": "TPA",
+        "originalIssueDate": "09/09/1994",
+        "status": "Active",
+        "expiration": "12/31/2024",
+        "boardPublicActionHistory": ""
+    },
+    {
+        "namePopupPage": "Robert H. Smith",
+        "addressPopupPage": "PAWLEYS ISLAND, SC  29585-6542   (mailing address)",
+        "licenseNumber": "877",
+        "licenseType": "Optometrist",
+        "certification": "TPA",
+        "originalIssueDate": "08/10/1988",
+        "status": "Active",
+        "expiration": "12/31/2024",
+        "boardPublicActionHistory": ""
+    },
+    {
+        "namePopupPage": "ROBERT  SMITH",
+        "addressPopupPage": "TYRONE, NM  88065   (mailing address)",
+        "licenseNumber": "2375",
+        "licenseType": "Optometrist",
+        "certification": "09/08/2022",
+        "originalIssueDate": "Active",
+        "status": "12/31/2024",
+        "expiration": "",
+        "boardPublicActionHistory": ""
+    },
+    {
+        "namePopupPage": "Rosalind O Smith",
+        "addressPopupPage": "GREER, SC  29650-1315   (mailing address)",
+        "licenseNumber": "587",
+        "licenseType": "Optometrist",
+        "certification": "TPA",
+        "originalIssueDate": "10/16/1976",
+        "status": "Active",
+        "expiration": "12/31/2024",
+        "boardPublicActionHistory": ""
+    },
+    {
+        "namePopupPage": "Theron C Smith",
+        "addressPopupPage": "GREER, SC  29650   (mailing address)",
+        "licenseNumber": "556",
+        "licenseType": "Optometrist",
+        "certification": "TPA",
+        "originalIssueDate": "06/20/1974",
+        "status": "Active",
+        "expiration": "12/31/2024",
+        "boardPublicActionHistory": ""
+    },
+    {
+        "namePopupPage": "Thomas W Smith",
+        "addressPopupPage": "GREENVILLE, SC  29607   (mailing address)",
+        "licenseNumber": "646",
+        "licenseType": "Optometrist",
+        "certification": "TPA",
+        "originalIssueDate": "07/17/1979",
+        "status": "Lapsed",
+        "expiration": "12/31/2020",
+        "boardPublicActionHistory": ""
+    },
+    {
+        "namePopupPage": "WILLIAM DOUGLAS SMITH",
+        "addressPopupPage": "JACKSONVILLE BEACH, FL  32250-7416   (mailing address)",
+        "licenseNumber": "1768",
+        "licenseType": "Optometrist",
+        "certification": "TPA",
+        "originalIssueDate": "06/24/2013",
+        "status": "Active",
+        "expiration": "12/31/2024",
+        "boardPublicActionHistory": ""
+    }
+]

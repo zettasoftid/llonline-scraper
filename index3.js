@@ -68,12 +68,37 @@ const fs = require('fs');
 
     // Get the page object for the popup
     const popupPage = await popupTarget.page();
-    
+
     // Grab data element in popup
     const namePopupPage = await popupPage.$eval('#lbl_name', e => e.textContent);
     const addressPopupPage = await popupPage.$eval('#lbl_add', e => e.textContent);
-    const licenseInfoPopupPage = await popupPage.$eval('#lbl_info', e => e.textContent);
-    console.log({namePopupPage, addressPopupPage, licenseInfoPopupPage});
+    const licenseNumber = await popupPage.$eval('#lbl_info', el => el.querySelector('b:nth-child(2)')?.nextSibling?.nodeValue?.trim() || "");
+    const licenseType = await popupPage.$eval('#lbl_info', el => el.querySelector('b:nth-child(4)')?.nextSibling?.nodeValue?.trim() || "");
+    const certification = await popupPage.$eval('#lbl_info', el => el.querySelector('b:nth-child(6)')?.nextSibling?.nodeValue?.trim() || "");
+    const originalIssueDate = await popupPage.$eval('#lbl_info', el => el.querySelector('b:nth-child(8)')?.nextSibling?.nodeValue?.trim() || "");
+    const status = await popupPage.$eval('#lbl_info', el => el.querySelector('b:nth-child(10)')?.nextSibling?.nodeValue?.trim() || "");
+    const expiration = await popupPage.$eval('#lbl_info', el => el.querySelector('b:nth-child(12)')?.nextSibling?.nodeValue?.trim() || "");
+    const boardPublicActionHistory = await popupPage.$eval('#lbl_info', el => el.querySelector('b:nth-child(14)')?.nextSibling?.nodeValue?.trim() || "");
+
+    console.log({
+      namePopupPage,
+      addressPopupPage,
+      licenseNumber,
+      licenseType,
+      certification,
+      originalIssueDate,
+      status,
+      expiration,
+      boardPublicActionHistory
+    });
+
+    // //
+    // console.log({
+    //   namePopupPage, addressPopupPage, licenseNumberPopupPageTextContent,
+    //   licenseTypePopupPageTextContent, certificationPopupPageTextContent,
+    //   originalIssueDatePopupPageTextContent, statusPopupPageTextContent,
+    //   expirationPopupPageTextContent, boardPublicActionHistoryPopupPageTextContent
+    // });
 
     // Delay for 10 seconds before closing the popup
     setTimeout(async () => {
